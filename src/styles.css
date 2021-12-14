@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./bootstrap/css/bootstrap-grid.css";
+@import "./bootstrap/css/bootstrap-reboot.css";
+@import "./bootstrap/css/bootstrap.css";
+
+.bg-whitenote{
+    background-color:rgb(237,200,0);
+    color:black;
+}
+
+.bg-whitenote:hover{
+    background-color:rgb(179, 152, 0);
+    color:white;
+}

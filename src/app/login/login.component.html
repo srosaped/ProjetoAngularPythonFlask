@@ -1,0 +1,39 @@
+<div *ngIf="message" class="container mt-4" >
+    <div class="alert alert-danger alert-dismissible fade show">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{message}}
+    </div>
+</div>
+
+<div class="container-fluid" style="position:absolute;top:50%;margin-top:-178.78px">
+    <div class="card mx-auto" style="width:100%;min-width:420px;max-width:420px;">
+        <img class="card-img-top" src="../../assets/images/Logo.png" alt="card image">
+        <div class="card-body">
+            <form class="needs-validation" novalidate action="/login" method="post">
+                <div class="form-group">
+                    <label for="username">Nome de utilizador: *</label>
+                    <input type="text" name="username" class="form-control" placeholder="Indica o teu nome de utilizador" id="username" required>
+                    <div class="valid-feedback">Válido</div>
+                    <div class="invalid-feedback">Por favor, preenche este campo.</div>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Palavra-passe: *</label>
+                    <input type="password" name="password" class="form-control" placeholder="Indica a tua palavra-passe" id="pwd" required>
+                    <div class="valid-feedback">Válido</div>
+                    <div class="invalid-feedback">Por favor, preenche este campo.</div>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox">Lembra-te de mim
+                        <div class="valid-feedback">Válido</div>
+                        <div class="invalid-feedback">Por favor, marca a checkbox para continuar.</div>
+                    </label>
+                </div>
+                <div style="text-align:right">
+                    <a href="/recuperarpassword" class="text-warning">Esqueceste a palavra-passe?</a>
+                    <button type="submit" class="btn btn-dark text-white">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

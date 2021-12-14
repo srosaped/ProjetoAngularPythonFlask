@@ -1,0 +1,21 @@
+<app-menugeral></app-menugeral>
+
+<div class="container mt-4">
+    <h1 class="display-4">Loja</h1>
+    <div id="montra" class="card-columns">
+        {%for row in data%}
+        <div class='card' style='width:300px;padding:15px;'>
+            <img class='card-img-top' src='/static/images/{{row.Foto}}' alt='card image'>
+            <div class='card-body'>
+                <h4 class='card-title'>{{row.Nome}}</h4>
+                <p>{{row.Descricao}}</p>
+                <p>Código do Produto: {{row.ProdutoID}}</p>
+                <p>{{row.PrecoUnitario}}€</p>
+                <a href='#' class='btn btn-primary'>COMPRAR</a>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+</div>
+
+<app-rodape></app-rodape>
